@@ -61,6 +61,8 @@ public class LoginPageTest extends TestBase{
 		loginPage.enterUsername("");
 		loginPage.enterPassword("");
 		loginPage.clickLogin();
+		
+		System.out.println("test");
 
 		// Assert
 		Assert.assertTrue(loginPage.isErrorMessageDisplayed(), "Error message not displayed for empty credentials.");
