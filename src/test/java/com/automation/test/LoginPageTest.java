@@ -68,18 +68,15 @@ public class LoginPageTest extends TestBase{
 		Assert.assertTrue(loginPage.isErrorMessageDisplayed(), "Error message not displayed for empty credentials.");
 	}
 
-	@Test(enabled=false)
-	public void testOnlyUsernameEntered() {
-		LoginPage loginPage= new LoginPage(driverManager.getDriver());
-		// Act
-		loginPage.enterUsername("validUser");
-		loginPage.enterPassword("");
-		loginPage.clickLogin();
-
-		// Assert
-		Assert.assertTrue(loginPage.isErrorMessageDisplayed(),
-				"Error message not shown when only username is entered.");
-	}
+	/*
+	 * @Test(enabled=false) public void testOnlyUsernameEntered() { LoginPage
+	 * loginPage= new LoginPage(driverManager.getDriver()); // Act
+	 * loginPage.enterUsername("validUser"); loginPage.enterPassword("");
+	 * loginPage.clickLogin();
+	 * 
+	 * // Assert Assert.assertTrue(loginPage.isErrorMessageDisplayed(),
+	 * "Error message not shown when only username is entered."); }
+	 */
 
 	@Test(enabled=false)
 	public void testLoginPageElementsVisible() {
