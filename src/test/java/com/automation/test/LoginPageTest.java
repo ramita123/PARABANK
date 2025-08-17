@@ -100,15 +100,12 @@ public class LoginPageTest extends TestBase{
 	return data;
 	}
 	
-	@DataProvider()
-	public Object[][] getCSVData() {
-	List<Object[]> data=	CSVReader.getCSVData();
-	Object[][] object=	data.toArray(new Object[0][]);
-	for (Object[] row : object) {
-	    System.out.println(Arrays.toString(row));
-	}
-	return object;
-	}
+	/*
+	 * @DataProvider() public Object[][] getCSVData() { List<Object[]> data=
+	 * CSVReader.getCSVData(); Object[][] object= data.toArray(new Object[0][]); for
+	 * (Object[] row : object) { System.out.println(Arrays.toString(row)); } return
+	 * object; }
+	 */
 	
 	
 
