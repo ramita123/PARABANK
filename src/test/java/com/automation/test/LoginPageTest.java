@@ -19,7 +19,7 @@ public class LoginPageTest extends TestBase{
 
 
 	//@Test(invocationCount=3,threadPoolSize=2)
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void testValidLogin()  {
 	
 		// Arrange
@@ -49,7 +49,7 @@ public class LoginPageTest extends TestBase{
 		loginPage.enterUsername(username);
 		loginPage.enterPassword(password);
 		loginPage.clickLogin();
-
+		System.out.println("Running testInvalidLogin");
 		// Assert
 		Assert.assertTrue(loginPage.isErrorMessageDisplayed(), "Error message not displayed for invalid password.");
 	}

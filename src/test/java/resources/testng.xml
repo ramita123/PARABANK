@@ -3,8 +3,8 @@
 
 <suite name="Suite" parallel="tests" thread-count="2">
 <listeners>
-        <listener class-name="com.automation.utils.ExtentTestListener" />
-        
+       <listener class-name="com.automation.listeners.ExtentTestListener" />
+         <listener class-name="com.automation.listeners.RetryAnalyzer" />
     </listeners>
   <test  name="chromeTest">
   <classes>

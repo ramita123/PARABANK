@@ -1,4 +1,4 @@
-package com.automation.utils;
+package com.automation.listeners;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
@@ -10,10 +10,10 @@ public class FailRetry implements IRetryAnalyzer{
 		
 	@Override
 	public boolean retry(ITestResult result) {
-		
-	
+
 		if(count<max) {
 			count++;
+			 System.out.println("Retrying " + result.getName() + " attempt " + count);
 			return true;
 		}
 	
