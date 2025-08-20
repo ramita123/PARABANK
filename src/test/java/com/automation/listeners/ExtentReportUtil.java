@@ -1,5 +1,6 @@
-package com.automation.utils;
+package com.automation.listeners;
 
+import com.automation.utils.CommonUtils;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
